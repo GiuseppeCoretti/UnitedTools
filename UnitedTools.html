@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HeavyBag</title>
+<link rel="stylesheet" type="text/css" href="DO-NOT-TOUCH\css\materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="DO-NOT-TOUCH\js\xlsx.full.min.js"></script>
+<style>
+	.qr img{
+		position: relative;top: 55px;
+	}
+	@media print{
+		@page {
+			size: A4;
+			orientation: portrait;
+		}
+		.nascondi{
+			display: none;
+		}
+	}
+</style>
+</head>
+<body>
+<nav class="nascondi">
+    <div class="nav-wrapper orange darken-1  z-depth-3">
+      <a href="#" class="brand-logo center">HeavyBag</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li></li>
+      </ul>
+    </div>
+</nav>
+<div class="container">
+<div class="row nascondi">
+<form action="#">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>COMP</span>
+        <input type="file" name="xlfile" id="xlf" />
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+ </form>
+<input type="checkbox" name="userabs" checked hidden>
+</div>
+<div class="row nascondi">
+	<form action="#">
+		<div class="file-field input-field">
+		  <div class="btn">
+			<span>Oversize</span>
+			<input type="file" name="xlfile" id="xlf2" />
+		  </div>
+		  <div class="file-path-wrapper">
+			<input class="file-path validate" type="text">
+		  </div>
+		</div>
+	 </form>
+	<input type="checkbox" name="userabs2" checked hidden>
+	<a class="waves-effect waves-light btn" onclick="generate()">Generate</a>
+</div>
+
+<div class="row" id="w1"></div><div class="row" id="w2"></div><div class="row" id="w3"></div>
+
+</div>
+<script type="text/javascript" src="DO-NOT-TOUCH\js\tools.js"></script>
+<script type="text/javascript" src="DO-NOT-TOUCH\js\jquery.min.js"></script>
+<script src="DO-NOT-TOUCH\js\materialize.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+	});
+</script>
+</div>
+</body>
+</html>
